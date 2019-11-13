@@ -16,7 +16,7 @@
     <div class="row">
       <div class="col-lg-8 " style="margin-top:50px;">
         <h2 class="mt-5" style="margin-bottom:20px;">Detalle del error seleccionado </h2>
-            <div ><?php echo $this->mensaje; ?></div>
+          <div ><?php echo $this->mensaje; ?></div>
           <form action="<?php echo constant('URL'); ?>/consulta/editarErrorweb" method="POST">
           <div class="form-group">
                 <label for="iderror">Id</label><br>

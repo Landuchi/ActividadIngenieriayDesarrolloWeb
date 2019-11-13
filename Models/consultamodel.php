@@ -52,11 +52,9 @@
         }
 
         public function update($item){
-          echo print_r($item);
-          /*  $query=$this->bd->connect()->prepare("UPDATE erroresweb SET origen = :origen, codigo= :codigo, descripcion = :descripcion, fecha= :fecha WHERE iderror=:iderror");
+            $query=$this->bd->connect()->prepare("UPDATE erroresweb SET origen = :origen, codigo= :codigo, descripcion = :descripcion, fecha= :fecha WHERE iderror=:iderror");
 
             try{
-
                 $query->execute([
                     'iderror' => $item ['iderror'],
                     'origen' => $item ['origen'],
@@ -69,8 +67,26 @@
                 }catch(PDOException $e){
                     echo $e->getMessage();
                     return false;
+                }  
+        }
+
+        public function delete($id){
+
+            $query=$this->bd->connect()->prepare("DELETE FROM erroresweb WHERE iderror=:id");
+
+            try{
+
+                $query->execute([
+                    'id' => $id,
+                ]);
+
+                return true;
+                }catch(PDOException $e){
+                    echo $e->getMessage();
+                    return false;
                 }
-                  */
+
+
         }
 
     }

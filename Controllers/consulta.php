@@ -16,27 +16,20 @@
         function verErrorweb($param =null){
             $idError = $param[0];
             $errorweb = $this->model->getById($idError);
-            //se guarda en una variable de sesion para que el usuario no pueda modificar el id del error
-            session_start();
-            $_SESSION['id_verErrorweb']= $errorweb->iderror;
             $this->view->errorweb=$errorweb;
             $this->view->mensaje = "";
             $this->view->render('consulta/detalle');
-
-
         }
 
         function editarErrorweb(){
-            session_start();
-            $iderror= $_SESSION['id_verErrorweb'];
+            $iderror     = $_POST['iderror'];
             $origen      = $_POST ['origen'];
             $codigo      = $_POST ['codigo'];
             $descripcion = $_POST ['descripcion'];
             $fecha       = $_POST ['fecha'];
 
-            unset($_SESSION['id_verErrorweb']);
-            echo print_r($iderror);
             if($this->model->update(['iderror'=>$iderror, 'origen' => $origen, 'codigo' => $codigo, 'descripcion' => $descripcion,'fecha' => $fecha])){
+              //editar exitosamente
                $errorweb = new errorweb();
                $errorweb->iderror = $iderror;
                $errorweb->origen = $origen;
@@ -45,7 +38,7 @@
                $errorweb->fecha = $fecha;
 
                $this->view->errorweb = $errorweb;
-               $this->view->mensaje = "Los cambios se han guardado correctamente".$errorweb;
+               $this->view->mensaje = "Los cambios se han guardado correctamente";
 
             }else{
                $this->view->mensaje = "Error en guardar cambios";
@@ -60,9 +53,9 @@
                $this->view->mensaje = "El error ha sido eliminado exitosamente";
 
             }else{
-               $this->view->mensaje = "Error en guardar cambios";
+               $this->view->mensaje = "Error en eliminar";
             }
-            $this->view->render('consulta/detalle');
+            $this->render();
         }
     }
 

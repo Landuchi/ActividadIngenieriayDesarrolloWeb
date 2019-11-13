@@ -8,15 +8,18 @@
   <link href="Content/css/bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-  
+
   <?php require 'views/header.php'?>
   <!-- CONTENIDO -->
-  
+
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">Bienvenido al sitio</h1>
-        <p class="lead">HELLO</p>
+        <p class="lead">Este sitio fue creado para llevar un control y registro de lo posibles
+		        fallos que puedan presentarse en su platadorma en el día a día, con la finalidad de brindar
+            un buen servicio técnico en el área de sitemas y atender de forma oportuna cada uno de ellos.</p>
+      </div>
       </div>
     </div>
   </div>
