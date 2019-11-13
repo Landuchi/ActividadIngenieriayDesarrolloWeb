@@ -5,7 +5,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title></title>
-  
+
 </head>
 <body>
 
@@ -15,12 +15,12 @@
     <div class="row">
       <div class="col-lg-12 text-center">
       <h2 class="mt-5"><?php echo $this->mensajeError; ?></h2>
-        <p class="lead">HELLO</p>
+        <p class="lead">ERROR AL CARGAR LA PAGINA</p>
       </div>
     </div>
   </div>
 
-    
+
 <?php require 'views/footer.php'?>
 
 
