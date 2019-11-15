@@ -1,17 +1,13 @@
 <?php
     //CONTROLADOR PRINCIPAL
     class Nuevo extends Controller{
-
         function __construct(){
             parent::__construct();
             $this->view->mensaje="";
-            
         }
-
         function render(){
             $this->view->render('nuevo/index');
         }
-        
         function  registrarError(){
             $origen      = $_POST ['origen'];
             $codigo      = $_POST ['codigo'];
@@ -24,7 +20,6 @@
             }else{
                 $mensajeInsertar= "Error";
             }
-            
             $this->view->mensaje=$mensajeInsertar;
             $this->render();
         }

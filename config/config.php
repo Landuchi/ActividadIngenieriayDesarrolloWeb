@@ -4,6 +4,4 @@
     define('USER','root');
     define('PASS','');
     define('BD','ingweb');
-    //define('CHARSET','utf8');
-
 ?>
