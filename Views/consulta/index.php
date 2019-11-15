@@ -8,15 +8,15 @@
   <link href="Content/css/bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-  
+
   <?php require 'views/header.php'?>
   <!-- CONTENIDO -->
-  
+
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center" style="margin-top:40px;">
         <h2 class="mt-5" style="margin-bottom:20px;" >Errores Registrados</h2>
-        <table class="table table-striped">
+        <table class="table table-striped" style="margin-bottom:40px;">
           <thead>
             <tr>
               <th scope="col">Origen</th>
@@ -28,11 +28,11 @@
             </tr>
           </thead>
           <tbody>
-          <?php 
+          <?php
           include_once 'Models/errorweb.php';
             foreach($this->erroresweb as $row){
               $eweb = new errorweb();
-              $eweb = $row; 
+              $eweb = $row;
           ?>
             <tr>
               <td><?php echo $eweb->origen;   ?></td>
@@ -42,15 +42,15 @@
               <td><a href="<?php echo constant ('URL'). 'consulta/verErrorweb/'. $eweb->iderror; ?>">Editar</a></td>
               <td><a href="<?php echo constant ('URL'). 'consulta/eliminarErrorweb/'. $eweb->iderror; ?>">Eliminar</a></td>
             </tr>
-            <?php 
+            <?php
             }
           ?>
 
           </tbody>
         </table>
 
-        
-     
+
+
       </div>
     </div>
   </div>
