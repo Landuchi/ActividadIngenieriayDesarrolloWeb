@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <?php require 'views/header.php'?>
+  <?php require 'Views/header.php'?>
   <!-- CONTENIDO -->
 
   <div class="container">
@@ -47,7 +47,7 @@
     </div>
   </div>
 
-  <?php require 'views/footer.php'?>
+  <?php require 'Views/footer.php'?>
 
 </body>
 

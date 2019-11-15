@@ -8,7 +8,7 @@
   <link href="Content/css/bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-  <?php require 'views/header.php'?>
+  <?php require 'Views/header.php'?>
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center" style="margin-top:40px;margin-bottom:200px;">
@@ -21,6 +21,6 @@
       </div>
     </div>
   </div>
-  <?php require 'views/footer.php'?>
+  <?php require 'Views/footer.php'?>
 </body>
 </html>

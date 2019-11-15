@@ -8,8 +8,8 @@
   <link href="Content/css/bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-  
-  <?php require 'views/header.php'?>
+
+  <?php require 'Views/header.php'?>
   <!-- CONTENIDO -->
 
   <div class="container">
@@ -35,15 +35,15 @@
                 <input type="date" name ="fecha" class="form-control"></input>
               </div>
               <div class="form-group">
-               <input type="submit" value="Registrar Error" class="btn btn-primary btn-lg mb-2"> 
+               <input type="submit" value="Registrar Error" class="btn btn-primary btn-lg mb-2">
               </div>
           </form>
-        
+
       </div>
     </div>
   </div>
 
-  <?php require 'views/footer.php'?>
+  <?php require 'Views/footer.php'?>
 
 </body>
 

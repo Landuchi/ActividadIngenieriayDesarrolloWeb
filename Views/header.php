@@ -5,7 +5,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title></title>
-   <link href="<?php echo constant('URL');?>Content/css/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+   <link href="<?php echo constant('URL');?>Content/css/bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -26,9 +26,6 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo constant('URL');?>consulta">Ver Errores</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="usuario">Usuario</a>
-          </li> -->
         </ul>
       </div>
     </div>
