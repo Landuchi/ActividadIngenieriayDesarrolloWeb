@@ -5,7 +5,7 @@ class View{
     }
 
     function render ($nombreVista){
-        require 'Views/'.$nombreVista.'.php';
+        require __DIR__.'/../Views/'.$nombreVista.'.php';
     }
 
 }
