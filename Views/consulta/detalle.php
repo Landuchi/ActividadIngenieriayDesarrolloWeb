@@ -28,7 +28,7 @@
               </div>
               <div class="form-group">
                 <label for="codigo">Código</label><br>
-                <input type="text" name ="codigo" class="form-control" value="<?php echo $this->errorweb->codigo; ?>" required></input>
+                <input type="number" name ="codigo" class="form-control" value="<?php echo $this->errorweb->codigo; ?>" required></input>
               </div>
               <div class="form-group">
                 <label for="descripcion">Descripcion</label><br>

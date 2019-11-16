@@ -24,7 +24,7 @@
               </div>
               <div class="form-group">
                 <label for="codigo">Código</label><br>
-                <input type="text" name ="codigo" class="form-control" required></input>
+                <input type="number" name ="codigo" class="form-control" required></input>
               </div>
               <div class="form-group">
                 <label for="descripcion">Descripcion</label><br>
